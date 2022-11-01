@@ -9,7 +9,7 @@ model=pickle.load(open('heartDiseaseModel.pkl','rb'))
 
 @app.route('/')
 def hello_world():
-    return render_template("/templates/heart_disease_predict.html")
+    return render_template("templates/heart_disease_predict.html")
 
 
 @app.route('/predict',methods=['POST','GET'])
